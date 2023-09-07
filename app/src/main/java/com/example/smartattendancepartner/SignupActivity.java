@@ -25,9 +25,9 @@ public class SignupActivity extends AppCompatActivity {
             startMainActivity();
         }
         else {
-            reg_no=findViewById(R.id.signup_registrationnumber);
-            password=findViewById(R.id.signup_password);
-            signin=findViewById(R.id.signin_btn);
+            reg_no=findViewById(R.id.registrationNumberEditText);
+            password=findViewById(R.id.passwordEditText);
+            signin=findViewById(R.id.signupButton);
             signin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

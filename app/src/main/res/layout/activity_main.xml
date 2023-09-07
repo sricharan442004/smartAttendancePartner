@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9AA7F1"
     tools:context=".MainActivity">
 
-    <TextView
+    <!-- Logo ImageView centered in the parent -->
+    <ImageView
+        android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sri charan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/app_logo"
+        android:layout_centerInParent="true" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Content section below the logo -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/logoImageView"
+    android:background="#9CA7E3">
+
+    <!-- Add your content for the second section here -->
+
+</RelativeLayout>
+    </RelativeLayout>
+
